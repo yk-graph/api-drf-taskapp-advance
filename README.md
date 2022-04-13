@@ -1,1 +1,2 @@
-# drf-reduxapp-api
+# project
+Redux編 Hooks+DRFで使用したAPI
