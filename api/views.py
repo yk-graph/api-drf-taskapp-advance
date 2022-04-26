@@ -8,7 +8,7 @@ class CreateUserView(generics.CreateAPIView):
     serializer_class = UserSerializer
     permission_classes = (AllowAny,)
 
-class MyProfileView(generics.RetrieveUpdateDestroyAPIView):
+class MyProfileView(generics.RetrieveUpdateAPIView):
     serializer_class = UserSerializer
     def get_object(self):
         return self.request.user
